@@ -1,12 +1,15 @@
 public class Producer  {
-    private String wesAndersson;
-    private String quentinTarantino;
+    private String name;
+    private int age;
 
-    public Producer(String wesAndersson, String quentinTarantino) {
-
+    public Producer(String name, int age) {
+        this.name=name;
+        this.age=age;
     }
 
-    public static void main(String[] args) {
+    @Override
+    public String toString() {
+        return "name: " + name  + ", age: " + age;
 
     }
 
